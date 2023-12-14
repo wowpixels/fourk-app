@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="container mx-auto">
       <BrowserRouter>
-        <Header />
-        <Category />
-        <Pages />
+        <div className="mx-4">
+          <Header />
+          <Category />
+          <Pages />
+        </div>
       </BrowserRouter>
     </div>
   );

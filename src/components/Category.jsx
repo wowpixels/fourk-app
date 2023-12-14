@@ -5,20 +5,40 @@ import { NavLink } from 'react-router-dom';
 function Category() {
   return (
     <div className="flex gap-4 justify-center items-center">
-      <NavLink>
-        <FaPizzaSlice to={'/cuisine/italian'} />
+      <NavLink
+        to={'/cuisine/italian'}
+        className={
+          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-lg w-1/2'
+        }
+      >
+        <FaPizzaSlice />
         <p>Italian</p>
       </NavLink>
-      <NavLink>
-        <FaHamburger to={'/cuisine/american'} />
+      <NavLink
+        to={'/cuisine/american'}
+        className={
+          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-lg w-1/2'
+        }
+      >
+        <FaHamburger />
         <p>American</p>
       </NavLink>
-      <NavLink>
-        <GiNoodles to={'/cuisine/chinese'} />
+      <NavLink
+        to={'/cuisine/chinese'}
+        className={
+          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-lg w-1/2'
+        }
+      >
+        <GiNoodles />
         <p>Chinese</p>
       </NavLink>
-      <NavLink>
-        <GiChopsticks to={'/cuisine/japanese'} />
+      <NavLink
+        to={'/cuisine/japanese'}
+        className={
+          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-lg w-1/2'
+        }
+      >
+        <GiChopsticks />
         <p>Japanese</p>
       </NavLink>
     </div>

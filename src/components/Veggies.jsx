@@ -34,8 +34,9 @@ function Veggies() {
 
   return (
     <div className="my-10">
-      <h2 className="font-bold mb-8">Pick your vegetarian recipe</h2>
-      <div className="">
+      <h2 className="font-bold">Pick your vegetarian recipe</h2>
+      <h4 className="mb-4">Delicious and Healthy</h4>
+      <div>
         <Splide
           options={{
             perPage: 3,

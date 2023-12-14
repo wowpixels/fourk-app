@@ -1,5 +1,11 @@
+import { NavLink } from 'react-router-dom';
+
 function Header() {
-  return <div>Header</div>;
+  return (
+    <div>
+      <NavLink to={'/'}>Fourk</NavLink>
+    </div>
+  );
 }
 
 export default Header;

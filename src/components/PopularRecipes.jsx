@@ -34,7 +34,8 @@ function PopularRecipes() {
 
   return (
     <>
-      <h2 className="font-bold mb-8">Popular Recipes</h2>
+      <h2 className="font-bold">Popular Recipes</h2>
+      <h4 className="mb-4">Your Daily picks</h4>
       <div className="">
         <Splide
           options={{

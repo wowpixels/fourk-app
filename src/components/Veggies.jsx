@@ -50,11 +50,11 @@ function Veggies() {
             return (
               <SplideSlide key={veggie.id}>
                 <div>
-                  <h4 className="absolute bottom-0 left-0 text-white bg-gradient-to-t from-black to-transparent p-4 w-full rounded-b-lg">
+                  <h4 className="absolute bottom-0 left-0 text-white bg-gradient-to-t from-black to-transparent to-90% p-4 w-full rounded-b-xl">
                     {veggie.title}
                   </h4>
                   <img
-                    className="rounded-lg shadow"
+                    className="rounded-xl shadow"
                     src={veggie.image}
                     alt={veggie.title}
                   />

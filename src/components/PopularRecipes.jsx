@@ -36,7 +36,7 @@ function PopularRecipes() {
     <>
       <h2 className="font-bold">Popular Recipes</h2>
       <h4 className="mb-4">Your Daily picks</h4>
-      <div className="">
+      <div>
         <Splide
           options={{
             perPage: 4,
@@ -50,11 +50,11 @@ function PopularRecipes() {
             return (
               <SplideSlide key={recipe.id}>
                 <div>
-                  <h4 className="absolute bottom-0 left-0 text-white bg-gradient-to-t from-black to-transparent p-4 w-full rounded-b-lg">
+                  <h4 className="text-sm absolute bottom-0 left-0 text-white bg-gradient-to-t from-black to-transparent to-90% p-4 w-full rounded-b-xl">
                     {recipe.title}
                   </h4>
                   <img
-                    className="rounded-lg shadow"
+                    className="rounded-xl shadow"
                     src={recipe.image}
                     alt={recipe.title}
                   />

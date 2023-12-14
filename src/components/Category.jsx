@@ -8,7 +8,7 @@ function Category() {
       <NavLink
         to={'/cuisine/italian'}
         className={
-          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-lg w-1/2'
+          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-xl w-1/2'
         }
       >
         <FaPizzaSlice />
@@ -17,7 +17,7 @@ function Category() {
       <NavLink
         to={'/cuisine/american'}
         className={
-          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-lg w-1/2'
+          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-xl w-1/2'
         }
       >
         <FaHamburger />
@@ -26,7 +26,7 @@ function Category() {
       <NavLink
         to={'/cuisine/chinese'}
         className={
-          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-lg w-1/2'
+          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-xl w-1/2'
         }
       >
         <GiNoodles />
@@ -35,7 +35,7 @@ function Category() {
       <NavLink
         to={'/cuisine/japanese'}
         className={
-          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-lg w-1/2'
+          'flex flex-col items-center justify-center border-2 border-gray-300 p-4 rounded-xl w-1/2'
         }
       >
         <GiChopsticks />

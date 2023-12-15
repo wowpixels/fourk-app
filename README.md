@@ -7,7 +7,7 @@
 
 The Fourk App - which is built upon ReactJS - allows users to look for recipes. The data is retrieved using the [Spoonacular](https://spoonacular.com/) API.
 
-**Live:** [Fourk App](https://fourk.netlify.app)
+**Live:** [Fourk App](https://fourk.wowpixels.app)
 
 ## Quick start
 

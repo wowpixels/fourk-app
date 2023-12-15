@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+import { Link } from 'react-router-dom';
 
 function PopularRecipes() {
   const [popularRecipes, setPopularRecipes] = useState([]);
@@ -40,25 +41,33 @@ function PopularRecipes() {
         <Splide
           options={{
             perPage: 4,
-            arrows: false,
+            arrows: true,
             pagination: false,
             drag: 'free',
             gap: '2rem',
+            breakpoints: {
+              992: {
+                perPage: 3,
+              },
+              640: {
+                perPage: 1,
+              },
+            },
           }}
         >
           {popularRecipes.map((recipe) => {
             return (
               <SplideSlide key={recipe.id}>
-                <div>
-                  <h4 className="text-sm absolute bottom-0 left-0 text-white bg-gradient-to-t from-black to-transparent to-90% p-4 w-full rounded-b-xl">
+                <Link className="group" to={`/recipe/${recipe.id}`}>
+                  <h4 className="text-sm absolute z-10 bottom-0 left-0 text-white bg-gradient-to-t from-black to-transparent to-90% p-4 w-full rounded-b-xl group-hover:bg-orange-500 group-hover:to-0%">
                     {recipe.title}
                   </h4>
                   <img
-                    className="rounded-xl shadow"
+                    className="rounded-xl relative z-0 group-hover:opacity-80 transition-all"
                     src={recipe.image}
                     alt={recipe.title}
                   />
-                </div>
+                </Link>
               </SplideSlide>
             );
           })}

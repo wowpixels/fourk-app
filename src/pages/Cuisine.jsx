@@ -34,19 +34,33 @@ function Cuisine() {
   };
 
   return (
-    <>
-      <h1 className="mt-8">{pageTitle}</h1>
-      <div className="grid grid-cols-4 gap-4 my-8">
-        {cuisine.map((item) => {
+    <motion.div
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="grid grid-cols-4 gap-4 mt-8">
+        {cuisine.map((recipe) => {
           return (
-            <div key={item.id}>
-              <img className="rounded-xl" src={item.image} alt={item.title} />
-              <h4 className="mt-4 mb-8 text-base text-center">{item.title}</h4>
-            </div>
+            <Link
+              to={`/recipe/${recipe.id}`}
+              className="group w-full"
+              key={recipe.id}
+            >
+              <img
+                className="rounded-xl w-full relative z-0 group-hover:opacity-80 transition-all"
+                src={recipe.image}
+                alt={recipe.title}
+              />
+              <h4 className="mt-4 mb-8 text-base text-center group-hover:text-orange-500">
+                {recipe.title}
+              </h4>
+            </Link>
           );
         })}
       </div>
-    </>
+    </motion.div>
   );
 }
 

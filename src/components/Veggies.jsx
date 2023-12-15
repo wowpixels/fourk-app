@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+import { Link } from 'react-router-dom';
 
 function Veggies() {
   const [veggies, setVeggies] = useState([]);
@@ -34,31 +35,39 @@ function Veggies() {
 
   return (
     <div className="my-10">
-      <h2 className="font-bold">Pick your vegetarian recipe</h2>
+      <h2 className="font-bold">Our vegetarian recipes for today</h2>
       <h4 className="mb-4">Delicious and Healthy</h4>
       <div>
         <Splide
           options={{
             perPage: 3,
-            arrows: false,
+            arrows: true,
             pagination: false,
             drag: 'free',
             gap: '2rem',
+            breakpoints: {
+              992: {
+                perPage: 2,
+              },
+              640: {
+                perPage: 1,
+              },
+            },
           }}
         >
-          {veggies.map((veggie) => {
+          {veggies.map((recipe) => {
             return (
-              <SplideSlide key={veggie.id}>
-                <div>
-                  <h4 className="absolute bottom-0 left-0 text-white bg-gradient-to-t from-black to-transparent to-90% p-4 w-full rounded-b-xl">
-                    {veggie.title}
+              <SplideSlide key={recipe.id}>
+                <Link className="group" to={`/recipe/${recipe.id}`}>
+                  <h4 className="absolute z-10 bottom-0 left-0 text-white bg-gradient-to-t from-black to-transparent to-90% p-4 w-full rounded-b-xl group-hover:bg-orange-500 group-hover:to-0%">
+                    {recipe.title}
                   </h4>
                   <img
-                    className="rounded-xl shadow"
-                    src={veggie.image}
-                    alt={veggie.title}
+                    className="rounded-xl relative z-0 group-hover:opacity-80 transition-all"
+                    src={recipe.image}
+                    alt={recipe.title}
                   />
-                </div>
+                </Link>
               </SplideSlide>
             );
           })}

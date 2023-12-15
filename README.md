@@ -1,10 +1,13 @@
 # Fourk App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3f9910ec-f6de-4e20-8be7-7ef6108f5da1/deploy-status)](https://app.netlify.com/sites/fourk/deploys)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
 The Fourk App - which is built upon ReactJS - allows users to look for recipes. The data is retrieved using the [Spoonacular](https://spoonacular.com/) API.
+
+**Live:** [Fourk App](https://fourk.netlify.app)
 
 ## Quick start
 

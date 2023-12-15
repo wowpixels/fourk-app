@@ -26,7 +26,7 @@ function SearchResult() {
         Your search result for:
         <span className="font-bold text-orange-500"> {params.search}</span>
       </h1>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {searchResult.map((recipe) => {
           return (
             <>

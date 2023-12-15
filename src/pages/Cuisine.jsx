@@ -40,7 +40,7 @@ function Cuisine() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="grid grid-cols-4 gap-4 mt-8">
+      <div className="grid gap-4 mt-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {cuisine.map((recipe) => {
           return (
             <Link

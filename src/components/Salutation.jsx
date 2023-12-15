@@ -15,7 +15,7 @@ function Salutation() {
   return (
     <>
       <h2
-        className="text-center mb-2 font-bold"
+        className="relative z-10 text-center mb-2 font-bold"
         dangerouslySetInnerHTML={{
           __html: randomSalutation[Math.floor(Math.random() * 10)],
         }}

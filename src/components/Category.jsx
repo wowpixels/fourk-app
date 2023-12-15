@@ -6,7 +6,7 @@ function Category() {
   return (
     <>
       <h2 className="font-bold mb-4">Lookup by category</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-center items-center">
+      <div className="grid relative z-20 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-center items-center">
         <NavLink to={'/cuisine/american'} className={'category-btn'}>
           <FaHamburger size={24} />
           <p>American</p>

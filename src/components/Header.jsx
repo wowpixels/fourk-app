@@ -18,7 +18,9 @@ function Header() {
           }
         >
           <img src={fourkIcon} width={32} alt="fourk icon" />
-          <span className="group-hover:underline">Fourk</span>
+          <span className="transition-all group-hover:underline group-hover:tracking-wider">
+            Fourk
+          </span>
         </NavLink>
       </div>
     </>

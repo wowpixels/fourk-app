@@ -15,13 +15,13 @@ function Category() {
           <GiNoodles size={24} />
           <p>Asian</p>
         </NavLink>
-        <NavLink to={'/cuisine/italian'} className={'category-btn'}>
-          <FaPizzaSlice size={24} />
-          <p>Italian</p>
-        </NavLink>
         <NavLink to={'/cuisine/french'} className={'category-btn'}>
           <GiCroissant size={24} />
           <p>French</p>
+        </NavLink>
+        <NavLink to={'/cuisine/italian'} className={'category-btn'}>
+          <FaPizzaSlice size={24} />
+          <p>Italian</p>
         </NavLink>
         <NavLink to={'/cuisine/mexican'} className={'category-btn'}>
           <GiTacos size={24} />
